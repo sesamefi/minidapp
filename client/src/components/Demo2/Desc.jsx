@@ -1,4 +1,7 @@
+import { useNavigate, useLocation } from "react-router-dom";
+
 const Desc = (props) => {
+  const navigate = useNavigate();
 
   const chain = new Map([
     [1, "https://etherscan.io/tx/"],
@@ -26,6 +29,11 @@ const Desc = (props) => {
       {displayHash}
       <p>
         Happy participation!
+      </p>
+      <p>
+        <button onClick={() => navigate("/")}>
+          Same-chain transfer
+        </button>
       </p>
     </>
   );

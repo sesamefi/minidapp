@@ -1,23 +1,18 @@
-import { EthProvider } from "./contexts/EthContext";
-import Intro from "./components/Intro/";
-import Demo from "./components/Demo";
-import Footer from "./components/Footer";
+import React from "react";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./home";
+import Crosschain from "./crosschain";
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <EthProvider>
-      <div id="App" >
-        <div className="container">
-          <Intro />
-          <hr />
-          <Demo />
-          <hr />
-          <Footer />
-        </div>
-      </div>
-    </EthProvider>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/crosschain" element={<Crosschain />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
