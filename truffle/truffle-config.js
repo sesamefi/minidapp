@@ -24,6 +24,7 @@ const mnemonic = process.env["MNEMONIC"];
 const MOONBASE_RPC_URL = process.env.MOONBASE_RPC_URL;
 // const ROPSTEN_RPC_URL = process.env.ROPSTEN_RPC_URL;
 const FUJI_RPC_URL = process.env.FUJI_RPC_URL;
+const MILKOMEDA_RPC_URL = process.env.MILKOMEDA_RPC_URL;
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 
 module.exports = {
@@ -83,7 +84,11 @@ module.exports = {
     fuji: {
       provider: () => new HDWalletProvider(mnemonic, FUJI_RPC_URL),
       network_id: 43113
-    }
+    },
+    milkomedatestnet: {
+      provider: () => new HDWalletProvider(mnemonic, MILKOMEDA_RPC_URL),
+      network_id: 200101
+    } 
     //
     // Useful for private networks
     // private: {

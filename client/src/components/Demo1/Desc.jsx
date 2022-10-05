@@ -32,7 +32,7 @@ const Desc = (props) => {
       </p>
       <p>
         <button onClick={() => navigate("/crosschain")}>
-          Cross-chain transfer
+          Cross-chain operations
         </button>
       </p>
     </>

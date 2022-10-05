@@ -32,7 +32,7 @@ const Desc = (props) => {
       </p>
       <p>
         <button onClick={() => navigate("/")}>
-          Same-chain transfer
+          Same-chain operations
         </button>
       </p>
     </>
