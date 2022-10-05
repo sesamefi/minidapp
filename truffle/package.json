@@ -1,7 +1,7 @@
 {
-  "name": "truffle",
+  "name": "cashier",
   "version": "1.0.0",
-  "description": "Truffle project with SimpleStorage contract",
+  "description": "Truffle project with Cashier contract",
   "main": "truffle-config.js",
   "dependencies": {
     "@openzeppelin/contracts": "^4.7.3",
@@ -11,6 +11,6 @@
   "scripts": {
     "test": "truffle test"
   },
-  "author": "",
+  "author": "Christophe Ramananjaona",
   "license": "MIT"
 }
