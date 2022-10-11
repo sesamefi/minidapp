@@ -75,7 +75,7 @@ module.exports = {
     // },
     goerli: { // NO MORE ROPSTEN
       provider: () => new HDWalletProvider(mnemonic, GOERLI_RPC_URL),
-      network_id: 3
+      network_id: 5
     },
     moonbase: {
       provider: () => new HDWalletProvider(mnemonic, MOONBASE_RPC_URL),
