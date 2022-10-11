@@ -22,7 +22,7 @@ require('dotenv').config();
 const mnemonic = process.env["MNEMONIC"];
 // const infuraProjectId = process.env["INFURA_PROJECT_ID"];
 const MOONBASE_RPC_URL = process.env.MOONBASE_RPC_URL;
-// const ROPSTEN_RPC_URL = process.env.ROPSTEN_RPC_URL;
+const GOERLI_RPC_URL = process.env.GOERLI_RPC_URL;
 const FUJI_RPC_URL = process.env.FUJI_RPC_URL;
 const MILKOMEDA_RPC_URL = process.env.MILKOMEDA_RPC_URL;
 const HDWalletProvider = require('@truffle/hdwallet-provider');
@@ -73,10 +73,10 @@ module.exports = {
     //   timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
     //   skipDryRun: true     // Skip dry run before migrations? (default: false for public nets)
     // },
-    /* ropsten: { // NO MORE ROPSTEN
-      provider: () => new HDWalletProvider(mnemonic, ROPSTEN_RPC_URL),
+    goerli: { // NO MORE ROPSTEN
+      provider: () => new HDWalletProvider(mnemonic, GOERLI_RPC_URL),
       network_id: 3
-    }, */
+    },
     moonbase: {
       provider: () => new HDWalletProvider(mnemonic, MOONBASE_RPC_URL),
       network_id: 1287

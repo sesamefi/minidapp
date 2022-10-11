@@ -10,7 +10,7 @@ const Desc = (props) => {
     [137, "https://polygonscan.com/tx/"],
     [250, "https://testnet.ftmscan.com/tx/"],
     [2001, "https://explorer-mainnet-cardano-evm.c1.milkomeda.com/tx/"],
-    [3, "https://ropsten.etherscan.io/tx/"],
+    [5, "https://goerli.etherscan.io/tx/"],
     [43113, "https://testnet.snowtrace.io/tx/"],
     [200101, "https://explorer-devnet-cardano-evm.c1.milkomeda.com/tx/"],
     [80001, "https://mumbai.polygonscan.com/tx/"],
